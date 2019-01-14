@@ -542,13 +542,17 @@
 	            <form action="#">
 	              <div class="form-group">
 	                <label for="appointment_name" class="text-black">Full Name</label>
-	                <input type="text" class="form-control" id="appointment_name" placeholder="ex: John Doe" required="required">
+	                <input type="text" class="form-control" id="appointment_name" required="required">
 	              </div>
 	              <div class="form-group">
 	                <label for="appointment_email" class="text-black">Email</label>
-	                <input type="email" class="form-control" id="appointment_email" placeholder="ex: john.doe@gmail.com" required="required">
+	                <input type="email" class="form-control" id="appointment_email" required="required">
 	              </div>
-	              <div class="row">
+	              <div class="form-group">
+	                <label for="appointment_cell" class="text-black">Cell Number</label>
+	                <input type="tel" class="form-control" id="appointment_cell" required="required">
+	              </div>
+	              <!--<div class="row">
 	                <div class="col-md-6">
 	                  <div class="form-group">
 	                    <label for="appointment_date" class="text-black">Date</label>
@@ -561,12 +565,15 @@
 	                    <input type="text" class="form-control" id="appointment_time" required="required">
 	                  </div>
 	                </div>
-	              </div>
+	              </div>-->
 	              
-
 	              <div class="form-group">
 	                <label for="appointment_message" class="text-black">Message</label>
-	                <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Type your message here." required="required"></textarea>
+	                <p>&bull; How are you financing? (Cash or Loan) - Buyer</p>
+	                <p>&bull; Do you have an "Pre-Approval Letter" for your loan? - Buyer</p>
+	                <p>&bull; Where are you looking to live/move to? - Buyer/Seller</p>
+	                <p>&bull; Where is the house you're selling located? - Seller</p>
+	                <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Answer the qusetions above and also tell me a little about yourself and your decision to buy or sell a home." required="required"></textarea>
 	              </div>
 	              <div class="form-group">
 	                <input type="submit" value="Send Message" class="btn btn-primary">
