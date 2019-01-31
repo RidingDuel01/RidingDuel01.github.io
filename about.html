@@ -205,7 +205,7 @@
 	            <div class="block-10">
 	              <div class="person-info mb-2">
 	                <span class="name">Bama Magassa</span>
-	                <span class="position">Realtor</span>
+	                <span class="position">Real Estate Agent</span>
 	              </div>
 	              <img src="images/person_3.jpg" alt="" class="img-fluid mb-3">
 	              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
@@ -270,19 +270,20 @@
 	            </button>
 	          </div>
 	          <div class="modal-body">
-	            <form action="#">
+	            <form id="appointment-form" action="appointment_form/appointment.php">
 	              <div class="form-group">
-	                <label for="appointment_name" class="text-black">Full Name</label>
-	                <input type="text" class="form-control" id="appointment_name" required="required">
+	                <!--<label for="appointment_name" class="text-black">Full Name</label>-->
+	                <input type="text" class="form-control" id="appointment_name" placeholder="Full Name" required="required">
 	              </div>
 	              <div class="form-group">
-	                <label for="appointment_email" class="text-black">Email</label>
-	                <input type="email" class="form-control" id="appointment_email" required="required">
+	                <!--<label for="appointment_email" class="text-black">Email</label>-->
+	                <input type="email" class="form-control" id="appointment_email" placeholder="Email" required="required">
 	              </div>
 	              <div class="form-group">
-	                <label for="appointment_cell" class="text-black">Cell Number</label>
-	                <input type="tel" class="form-control" id="appointment_cell" required="required">
+	                <!--<label for="appointment_cell" class="text-black">Cell Number</label>-->
+	                <input type="tel" class="form-control" id="appointment_cell" placeholder="Cell Number" required="required">
 	              </div>
+
 	              <!--<div class="row">
 	                <div class="col-md-6">
 	                  <div class="form-group">
@@ -299,15 +300,18 @@
 	              </div>-->
 	              
 	              <div class="form-group">
-	                <label for="appointment_message" class="text-black">Message</label>
+	                <!--<label for="appointment_message" class="text-black">Message</label>-->
 	                <p>&bull; How are you financing? (Cash or Loan) - Buyer</p>
-	                <p>&bull; Do you have an "Pre-Approval Letter" for your loan? - Buyer</p>
-	                <p>&bull; Where are you looking to live/move to? - Buyer/Seller</p>
+	                <p>&bull; Do you have a "Pre-Approval Letter" for a loan? - Buyer</p>
+	                <p>&bull; Do you have a specific area in mind? - Buyer</p>
+	                <p>&bull; Do you have a timeline? If so, when? - Buyer/Seller</p>
 	                <p>&bull; Where is the house you're selling located? - Seller</p>
-	                <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Answer the qusetions above and also tell me a little about yourself and your decision to buy or sell a home." required="required"></textarea>
+	                <p>&bull; How much would you price the home for? - Seller</p>
+	                <p>&bull; Are ypu flexible with the home price? - Seller</p>
+	                <textarea name="appointment_message" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Answer the qusetions above and tell me a little about yourself and your decision to buy or sell a home." required="required"></textarea>
 	              </div>
 	              <div class="form-group">
-	                <input type="submit" value="Send Message" class="btn btn-primary">
+	                <input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-primary">
 	              </div>
 	            </form>
 	          </div>
@@ -335,6 +339,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
-    
+    <!-- Start of HubSpot Embed Code -->
+  	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5234060.js"></script>
+		<!-- End of HubSpot Embed Code -->
+
   </body>
 </html>
